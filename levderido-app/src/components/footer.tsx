@@ -7,33 +7,25 @@ import { Subheading } from './text'
 
 function CallToAction() {
   return (
-    <div className="relative pt-20 pb-16 text-center sm:py-24">
+    <div className="relative pt-20 pb-16 text-center sm:py-14">
       <hgroup>
-        <Subheading>Get started</Subheading>
+        <Subheading>en savoir plus ?</Subheading>
         <p className="mt-6 text-3xl font-medium tracking-tight text-gray-950 sm:text-5xl">
-          Ready to dive in?
+          Vous voulez rejoindre l&apos;aventure,
           <br />
-          Start your free trial today.
+          avoir plus d&apos;informations ?
         </p>
       </hgroup>
       <p className="mx-auto mt-6 max-w-xs text-sm/6 text-gray-500">
-        Get the cheat codes for selling and unlock your team&apos;s revenue
-        potential.
+        Vous pouvez nous suivre sur les réseaux sociaux ou nous contacter par
+        e-mail ou téléphone.
       </p>
       <div className="mt-6">
-        <Button className="w-full sm:w-auto" href="#">
-          Get started
+        <Button className="w-full sm:w-auto" href="/contact">
+          Nous contacter
         </Button>
       </div>
     </div>
-  )
-}
-
-function SocialIconX(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
-      <path d="M12.6 0h2.454l-5.36 6.778L16 16h-4.937l-3.867-5.594L2.771 16H.316l5.733-7.25L0 0h5.063l3.495 5.114L12.6 0zm-.86 14.376h1.36L4.323 1.539H2.865l8.875 12.837z" />
-    </svg>
   )
 }
 
@@ -43,16 +35,20 @@ function SocialIconFacebook(props: React.ComponentPropsWithoutRef<'svg'>) {
       <path
         fillRule="evenodd"
         clipRule="evenodd"
-        d="M16 8.05C16 3.603 12.418 0 8 0S0 3.604 0 8.05c0 4.016 2.926 7.346 6.75 7.95v-5.624H4.718V8.05H6.75V6.276c0-2.017 1.194-3.131 3.022-3.131.875 0 1.79.157 1.79.157v1.98h-1.008c-.994 0-1.304.62-1.304 1.257v1.51h2.219l-.355 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.95z"
+        d="M8 0C3.58 0 0 3.58 0 8c0 4.02 2.926 7.346 6.75 7.95v-5.624H4.718V8H6.75V6.276c0-2.017 1.194-3.131 3.022-3.131.875 0 1.79.157 1.79.157v1.98h-1.008c-.994 0-1.304.62-1.304 1.257V8H11l-.355 2.326H9.25V16C13.074 15.396 16 12.066 16 8c0-4.42-3.58-8-8-8z"
       />
     </svg>
   )
 }
 
-function SocialIconLinkedIn(props: React.ComponentPropsWithoutRef<'svg'>) {
+function SocialIconInstagram(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 16 16" fill="currentColor" {...props}>
-      <path d="M14.82 0H1.18A1.169 1.169 0 000 1.154v13.694A1.168 1.168 0 001.18 16h13.64A1.17 1.17 0 0016 14.845V1.15A1.171 1.171 0 0014.82 0zM4.744 13.64H2.369V5.996h2.375v7.644zm-1.18-8.684a1.377 1.377 0 11.52-.106 1.377 1.377 0 01-.527.103l.007.003zm10.075 8.683h-2.375V9.921c0-.885-.015-2.025-1.234-2.025-1.218 0-1.425.966-1.425 1.968v3.775H6.233V5.997H8.51v1.05h.032c.317-.601 1.09-1.235 2.246-1.235 2.405-.005 2.851 1.578 2.851 3.63v4.197z" />
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M8 2.5c1.96 0 2.2.008 2.97.043.72.033 1.11.153 1.37.255.34.13.58.287.83.537.25.25.407.49.537.83.102.26.222.65.255 1.37.035.77.043 1.01.043 2.97s-.008 2.2-.043 2.97c-.033.72-.153 1.11-.255 1.37-.13.34-.287.58-.537.83-.25.25-.49.407-.83.537-.26.102-.65.222-1.37.255-.77.035-1.01.043-2.97.043s-2.2-.008-2.97-.043c-.72-.033-1.11-.153-1.37-.255-.34-.13-.58-.287-.83-.537-.25-.25-.407-.49-.537-.83-.102-.26-.222-.65-.255-1.37C2.508 10.2 2.5 9.96 2.5 8s.008-2.2.043-2.97c.033-.72.153-1.11.255-1.37.13-.34.287-.58.537-.83.25-.25.49-.407.83-.537.26-.102.65-.222 1.37-.255C5.8 2.508 6.04 2.5 8 2.5zm0-2.5C6.02 0 5.76.008 4.99.043 4.21.08 3.64.205 3.19.38c-.49.182-.9.407-1.31.817C1.47 1.61 1.245 2.02 1.063 2.51.888 2.96.763 3.53.727 4.31.692 5.08.684 5.34.684 8s.008 2.92.043 3.69c.036.78.161 1.35.336 1.8.182.49.407.9.817 1.31.41.41.82.635 1.31.817.45.175 1.02.3 1.8.336C5.76 15.992 6.02 16 8 16s2.24-.008 3.01-.043c.78-.036 1.35-.161 1.8-.336.49-.182.9-.407 1.31-.817.41-.41.635-.82.817-1.31.175-.45.3-1.02.336-1.8.035-.77.043-1.03.043-3.69s-.008-2.92-.043-3.69c-.036-.78-.161-1.35-.336-1.8-.182-.49-.407-.9-.817-1.31-.41-.41-.82-.635-1.31-.817-.45-.175-1.02-.3-1.8-.336C10.24.008 9.98 0 8 0zM8 4.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7zm0 5.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm3.85-5.86a.85.85 0 1 1-1.7 0 .85.85 0 0 1 1.7 0z"
+      />
     </svg>
   )
 }
@@ -61,28 +57,20 @@ function SocialLinks() {
   return (
     <>
       <Link
-        href="https://facebook.com"
+        href="https://www.facebook.com/share/16CVJQHKXP/"
         target="_blank"
-        aria-label="Visit us on Facebook"
+        aria-label="Rejoignez nous sur Facebook"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
-        <SocialIconFacebook className="size-4" />
+        <SocialIconFacebook className="size-6" />
       </Link>
       <Link
-        href="https://x.com"
+        href="https://www.instagram.com/le.v.de.rido?igsh=MXdla2xicmRubm5hMA=="
         target="_blank"
-        aria-label="Visit us on X"
+        aria-label="Rejoignez nous sur Instagram"
         className="text-gray-950 data-hover:text-gray-950/75"
       >
-        <SocialIconX className="size-4" />
-      </Link>
-      <Link
-        href="https://linkedin.com"
-        target="_blank"
-        aria-label="Visit us on LinkedIn"
-        className="text-gray-950 data-hover:text-gray-950/75"
-      >
-        <SocialIconLinkedIn className="size-4" />
+        <SocialIconInstagram className="size-6" />
       </Link>
     </>
   )
@@ -90,8 +78,20 @@ function SocialLinks() {
 
 function Copyright() {
   return (
-    <div className="text-sm/6 text-gray-950">
-      &copy; {new Date().getFullYear()} Radiant Inc.
+    <div className="sm:flex sm:gap-4">
+      <div className="text-sm/6 text-gray-950">
+        &copy; {new Date().getFullYear()} LE V DE RIDO Inc.
+      </div>
+      <div className="text-sm/6 text-gray-950">
+        Development :{' '}
+        <Link
+          href="https://www.madebysancho.com"
+          target="_blank"
+          className="font-medium"
+        >
+          SANCHO
+        </Link>
+      </div>
     </div>
   )
 }
@@ -103,7 +103,7 @@ export function Footer() {
         <div className="absolute inset-2 rounded-4xl bg-white/80" />
         <Container>
           <CallToAction />
-          <PlusGrid className="pb-16">
+          <PlusGrid className="pb-8 lg:pb-12">
             <PlusGridRow className="flex justify-between">
               <div>
                 <PlusGridItem className="py-3">
@@ -111,7 +111,7 @@ export function Footer() {
                 </PlusGridItem>
               </div>
               <div className="flex">
-                <PlusGridItem className="flex items-center gap-8 py-3">
+                <PlusGridItem className="flex items-center gap-6 py-3">
                   <SocialLinks />
                 </PlusGridItem>
               </div>
