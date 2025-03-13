@@ -7,7 +7,7 @@ import { Heading, Lead, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Company',
+  title: 'Histoire',
   description:
     'We’re on a mission to transform revenue organizations by harnessing vast amounts of illegally acquired customer data.',
 }
