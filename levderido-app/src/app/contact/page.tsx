@@ -8,8 +8,8 @@ import { clsx } from 'clsx'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Login',
-  description: 'Sign in to your account to continue.',
+  title: 'Contact',
+  description: 'Voici tous les moyens de nous contacter',
 }
 
 export default function Login() {
