@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 }
 function Testimonial() {
   return (
-    <div className="mx-2 my-24 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pt-72 pb-24 lg:pt-36">
+    <div className="mx-2 my-24 mt-40 rounded-4xl bg-gray-900 bg-[url(/dot-texture.svg)] pt-72 pb-24 lg:pt-36">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
           <div className="-mt-96 lg:-mt-52">
@@ -38,10 +38,12 @@ function Testimonial() {
                 </p>
               </blockquote>
               <figcaption className="mt-auto">
-                <p className="text-sm/6 font-medium text-white">Tina Yards</p>
+                <p className="text-sm/6 font-medium text-white">
+                  Nathalie Vandermoeten
+                </p>
                 <p className="text-sm/6 font-medium">
                   <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-                    VP of Sales, Protocol
+                    Fondatrice, LE V DE RIDO
                   </span>
                 </p>
               </figcaption>
@@ -57,76 +59,70 @@ function FrequentlyAskedQuestions() {
   return (
     <Container>
       <section id="faqs" className="scroll-mt-8">
-        <Subheading className="text-center">
-          Frequently asked questions
-        </Subheading>
+        <Subheading className="text-center">En savoir plus sur</Subheading>
         <Heading as="div" className="mt-2 text-center">
-          Your questions answered.
+          Notre histoire
         </Heading>
         <div className="mx-auto mt-16 mb-32 max-w-xl space-y-12">
           <dl>
             <dt className="text-sm font-semibold">
-              What measures are in place to ensure the security of our data?
+              Quand est ce que j&apos;ai decouvert le théâtre ?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Data security is a top priority for us, which is ironic given that
-              our business depends on others not taking it very seriously. We
-              understand that any breach could put both us and most of our
-              customers out of business—and behind bars. We employ robust
-              security measures, including data encryption, secure data centers,
-              and regular security audits to ensure this never happens.
+              J’ai découvert le théâtre en 2001 en intégrant la troupe de
+              théâtre « A quoi on joue » du village d’Heyrieux dans l’Isère.
+              S’en est suivi 7 années de rigolade, de représentations, de
+              répétitions, de rôles toujours différents et dans une ambiance de
+              bienveillance et de franche camaraderie.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Is there a mobile app available for your platform?
+              Qu&apos;est ce que je recherchais ?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, we offer a mobile app that provides all the key
-              functionalities of our desktop platform, allowing sales reps to
-              manage deals on the go. Additionally, we have another app
-              pre-installed on most modern smartphones that allows us to track
-              your location, listen to your conversations, and access your
-              camera and microphone at any time. This app is not available for
-              download.
+              De retour dans ma ville d’origine, La Seyne Sur mer, en 2008 j’ai
+              recherché ce que j’avais quitté. J’ai intégré différentes
+              compagnies de théâtre mais sans jamais trouvé ce qui m’animait,
+              l’esprit de cohésion à travers le théâtre. C’est là que la
+              création de ma troupe avec mes valeurs, bienveillance et pas de
+              jugement, a germé dans mon esprit.
             </dd>
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Can I customize the workflow to match our company’s deal process?
+              LE V DE RIDO dans tout sa ?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, our platform is highly customizable, although there should be
-              no need. Before you sign up, we discreetly gather information
-              about your company and its processes from a variety of sources. We
-              then use this information to pre-configure the platform to match
-              your existing workflows. This is why we ask for your social
-              security number and access to your email account during the
-              sign-up process.
-            </dd>
-          </dl>
-          <dl>
-            <dt className="text-sm font-semibold">
-              What kind of support do you offer?
-            </dt>
-            <dd className="mt-4 text-sm/6 text-gray-600">
-              We offer comprehensive support through multiple channels,
-              including 24/7 live chat, email, and phone support. However, since
-              we have full access to your internal network, we will know if
-              you’re having issues before you do.
-            </dd>
-          </dl>
-          <dl>
-            <dt className="text-sm font-semibold">
-              Can I integrate the CRM with other sales intelligence tools?
-            </dt>
-            <dd className="mt-4 text-sm/6 text-gray-600">
-              Yes, our solution integrates seamlessly with a variety of other
-              systems. However, be warned that most of these integrations are
-              short-lived. We have a dedicated team of engineers who
-              reverse-engineer the APIs of other tools, enabling us to build
-              their functionality into our product and eventually put them out
-              of business.
+              L’histoire du LE V DE RIDO commence sur un coin de table un jour
+              de Novembre 2013, par la création de l’association et de la
+              troupe. C’est un article paru dans Le Seynois qui fera venir à moi
+              plein de personnes de tout horizon et de tout âge. Les deux
+              premières pièces « L’arbre à came » en 2014 et « Par la lorgnette
+              » en 2015 ont connu un joli succès et ont permis de nous faire
+              connaître. Mais des évènements de vie m’ont obligé à mettre
+              l’association en sommeil…durant cinq ans. C’est en 2020, qu’une
+              autre troupe est venue me chercher pour la mise en scène de leur
+              pièce « C’est pas si facile »…et le Covid est passé par là ! Nous
+              rebondissons en 2021 en reprenant « C’est pas si facile » sous
+              l’égide du LE V DE RIDO et l’arrivée de nouveaux comédiens. La
+              pièce sera jouée en 2022 avec le succès que l’on connaît mais
+              aussi la disparition d’un ami, l’un des créateurs de la pièce. En
+              2023, j’ai l’immense surprise de voir arriver une dizaine de
+              comédiens qui veulent tous jouer sous ma direction. La création de
+              monter deux pièces sera prise et nous préparerons « Double Axel-le
+              », avec les anciens et « Sale attente » avec les nouveaux. Les
+              représentations ont lieu sous forme de mini-festival : une pièce
+              le vendredi et une autre le samedi. Le public a été au rendez-vous
+              et nous avons pris un immense plaisir à jouer ces pièces sur trois
+              week-end. Sur cette lancée, en 2024, nous repartons sur deux
+              pièces. D’autres comédiens nous rejoignent et « Le coupable est
+              dans la salle » et « Soirée pyjama » voient le jour. Très beau
+              succès pour ces deux pièces et « Soirée pyjama » a même été
+              sélectionné par le Rotary-club de La Seyne Sur Mer/Saint Mandrier
+              pour être jouer en faveur des enfants de Mayotte en Février 2025.
+              Cette année, il n’y aura qu’une pièce…enfin pour le moment et ce
+              sera « Paul m’a laissé sa clé ! »
             </dd>
           </dl>
         </div>
@@ -136,8 +132,8 @@ function FrequentlyAskedQuestions() {
 }
 function Header() {
   return (
-    <Container className="mt-16">
-      <Heading as="h1">Helping companies generate revenue.</Heading>
+    <Container className="mt-16 mb-32">
+      <Heading as="h1">La compagnie</Heading>
       <Lead className="mt-6 max-w-3xl">
         We’re on a mission to transform revenue organizations by harnessing vast
         amounts of illegally acquired customer data.
@@ -161,8 +157,8 @@ function Header() {
             one of us talks, we all go down.
           </p>
         </div>
-        <div className="pt-20 lg:row-span-2 lg:-mr-16 xl:mr-auto">
-          <div className="-mx-8 grid grid-cols-2 gap-4 sm:-mx-16 sm:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
+        <div className="pt-20 lg:row-span-2 lg:mx-2 lg:mt-8 xl:mr-auto">
+          <div className="-mx-8 mx-2 grid grid-cols-2 gap-4 md:mx-0 md:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
                 alt=""
@@ -194,29 +190,31 @@ function Header() {
           </div>
         </div>
         <div className="max-lg:mt-16 lg:col-span-1">
-          <Subheading>The Numbers</Subheading>
+          <Subheading>les chiffres</Subheading>
           <hr className="mt-6 border-t border-gray-200" />
           <dl className="mt-6 grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Raised</dt>
+              <dt className="text-sm/6 text-gray-600">Pièces</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 $<AnimatedNumber start={100} end={150} />M
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 border-b border-dotted border-gray-200 pb-4">
-              <dt className="text-sm/6 text-gray-600">Companies</dt>
+              <dt className="text-sm/6 text-gray-600">Représentations</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 <AnimatedNumber start={15} end={30} />K
               </dd>
             </div>
             <div className="flex flex-col gap-y-2 max-sm:border-b max-sm:border-dotted max-sm:border-gray-200 max-sm:pb-4">
-              <dt className="text-sm/6 text-gray-600">Deals Closed</dt>
+              <dt className="text-sm/6 text-gray-600">Spectateurs</dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 <AnimatedNumber start={0.9} end={1.5} decimals={1} />M
               </dd>
             </div>
             <div className="flex flex-col gap-y-2">
-              <dt className="text-sm/6 text-gray-600">Leads Generated</dt>
+              <dt className="text-sm/6 text-gray-600">
+                Années d&apos;activités
+              </dt>
               <dd className="order-first text-6xl font-medium tracking-tight">
                 <AnimatedNumber start={150} end={200} />M
               </dd>
