@@ -14,7 +14,7 @@ import { PlusGrid, PlusGridItem, PlusGridRow } from './plus-grid'
 const links = [
   { href: '/histoire', label: 'Histoire' },
   { href: '/inscription', label: 'Inscription' },
-  { href: '/login', label: 'Login' },
+  { href: '/contact', label: 'Contact' },
 ]
 
 function DesktopNav() {
