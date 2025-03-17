@@ -1,7 +1,6 @@
 'use client'
 
 import * as Headless from '@headlessui/react'
-import { ArrowLongRightIcon } from '@heroicons/react/20/solid'
 import { clsx } from 'clsx'
 import {
   MotionValue,
@@ -14,68 +13,68 @@ import {
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
 import { Container } from './container'
-import { Link } from './link'
 import { Heading, Subheading } from './text'
 
 const testimonials = [
   {
-    img: '/testimonials/tina-yards.jpg',
-    name: 'Tina Yards',
-    title: 'VP of Sales, Protocol',
-    quote:
-      'Thanks to Radiant, we’re finding new leads that we never would have found with legal methods.',
+    img: '/posters/arbre-a-came-daudet.jpg',
+    name: "L'arbre à came",
+    quote: 'Voir un extrait',
+    date: '2014-09-13T00:00:00Z',
   },
   {
-    img: '/testimonials/conor-neville.jpg',
-    name: 'Conor Neville',
-    title: 'Head of Customer Success, TaxPal',
-    quote:
-      'Radiant made undercutting all of our competitors an absolute breeze.',
+    img: '/posters/double-axelle-daudet.jpg',
+    name: 'Double axel-le',
+    quote: 'Voir un extrait',
+    date: '2023-07-01T00:00:00Z',
   },
   {
-    img: '/testimonials/amy-chase.jpg',
-    name: 'Amy Chase',
-    title: 'Head of GTM, Pocket',
-    quote:
-      'We closed a deal in literally a few minutes because we knew their exact budget.',
+    img: '/posters/cest-pas-si-facile-daudet.jpg',
+    name: "C'est pas si facile",
+    quote: 'Voir un extrait',
+    date: '2022-05-20T00:00:00Z',
   },
   {
-    img: '/testimonials/veronica-winton.jpg',
-    name: 'Veronica Winton',
-    title: 'CSO, Planeteria',
-    quote:
-      'We’ve managed to put two of our main competitors out of business in 6 months.',
+    img: '/posters/le-coupable-colbert.jpg',
+    name: 'Le coupable est dans la salle',
+    quote: 'Voir un extrait',
+    date: '2024-09-06T00:00:00Z',
   },
   {
-    img: '/testimonials/dillon-lenora.jpg',
-    name: 'Dillon Lenora',
-    title: 'VP of Sales, Detax',
-    quote: 'I was able to replace 80% of my team with RadiantAI bots.',
+    img: '/posters/par-la-lorgnette-daudet.jpg',
+    name: 'Par la lorgnette',
+    quote: 'Voir un extrait',
+    date: '2015-11-10T00:00:00Z',
   },
   {
-    img: '/testimonials/harriet-arron.jpg',
-    name: 'Harriet Arron',
-    title: 'Account Manager, Commit',
-    quote:
-      'I’ve smashed all my targets without having to speak to a lead in months.',
+    img: '/posters/sale-attente-daudet.jpg',
+    name: 'Sale attente',
+    quote: 'Voir un extrait',
+    date: '2023-06-30T00:00:00Z',
+  },
+  {
+    img: '/posters/soiree-pyjama-un-monde-a-nous.jpg',
+    name: 'Soirée pyjama',
+    quote: 'Voir un extrait',
+    date: '2024-10-04T00:00:00Z',
   },
 ]
 
 function TestimonialCard({
-  name,
-  title,
-  img,
-  children,
   bounds,
   scrollX,
+  img,
+  children,
+  quote,
+  date,
   ...props
 }: {
-  img: string
-  name: string
-  title: string
-  children: React.ReactNode
   bounds: RectReadOnly
   scrollX: MotionValue<number>
+  img: string
+  children: React.ReactNode
+  quote: string
+  date: string
 } & HTMLMotionProps<'div'>) {
   let ref = useRef<HTMLDivElement | null>(null)
 
@@ -129,46 +128,27 @@ function TestimonialCard({
       />
       <figure className="relative p-10">
         <blockquote>
-          <p className="relative text-xl/7 text-white">
-            <span aria-hidden="true" className="absolute -translate-x-full">
-              “
-            </span>
+          <p className="relative text-lg font-semibold text-white uppercase">
+            <span
+              aria-hidden="true"
+              className="absolute -translate-x-full"
+            ></span>
             {children}
-            <span aria-hidden="true" className="absolute">
-              ”
-            </span>
+            <span aria-hidden="true" className="absolute"></span>
           </p>
         </blockquote>
-        <figcaption className="mt-6 border-t border-white/20 pt-6">
-          <p className="text-sm/6 font-medium text-white">{name}</p>
+        <figcaption className="mt-4 border-t border-white/20 pt-4">
           <p className="text-sm/6 font-medium">
             <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
-              {title}
+              {date}
             </span>
           </p>
+          <button className="mt-2 -mb-4 cursor-pointer rounded-sm bg-white px-2.5 py-1.5 text-sm font-semibold hover:bg-white/85">
+            {quote}
+          </button>
         </figcaption>
       </figure>
     </motion.div>
-  )
-}
-
-function CallToAction() {
-  return (
-    <div>
-      <p className="max-w-sm text-sm/6 text-gray-600">
-        Join the best sellers in the business and start using Radiant to hit
-        your targets today.
-      </p>
-      <div className="mt-2">
-        <Link
-          href="#"
-          className="inline-flex items-center gap-2 text-sm/6 font-medium text-pink-600"
-        >
-          Get started
-          <ArrowLongRightIcon className="size-5" />
-        </Link>
-      </div>
-    </div>
   )
 }
 
@@ -188,13 +168,23 @@ export function Testimonials() {
     scrollRef.current!.scrollTo({ left: (width + gap) * index })
   }
 
+  const sortPerformances = testimonials.sort((perfA, perfB) =>
+    new Date(perfA.date) > new Date(perfB.date) ? -1 : 1,
+  )
+
+  const isoToNiceDisplay = (date: string): string => {
+    return new Date(date).toLocaleString(undefined, {
+      dateStyle: 'long',
+    })
+  }
+
   return (
     <div className="overflow-hidden py-32">
       <Container>
         <div ref={setReferenceWindowRef}>
-          <Subheading>What everyone is saying</Subheading>
+          <Subheading>Un oeil sur</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+            Nos représentations
           </Heading>
         </div>
       </Container>
@@ -207,24 +197,25 @@ export function Testimonials() {
           '[--scroll-padding:max(--spacing(6),calc((100vw-(var(--container-2xl)))/2))] lg:[--scroll-padding:max(--spacing(8),calc((100vw-(var(--container-7xl)))/2))]',
         ])}
       >
-        {testimonials.map(({ img, name, title, quote }, testimonialIndex) => (
-          <TestimonialCard
-            key={testimonialIndex}
-            name={name}
-            title={title}
-            img={img}
-            bounds={bounds}
-            scrollX={scrollX}
-            onClick={() => scrollTo(testimonialIndex)}
-          >
-            {quote}
-          </TestimonialCard>
-        ))}
+        {sortPerformances.map(
+          ({ img, quote, date, name }, testimonialIndex) => (
+            <TestimonialCard
+              key={testimonialIndex}
+              bounds={bounds}
+              scrollX={scrollX}
+              img={img}
+              quote={quote}
+              date={isoToNiceDisplay(date)}
+              onClick={() => scrollTo(testimonialIndex)}
+            >
+              {name}
+            </TestimonialCard>
+          ),
+        )}
         <div className="w-[42rem] shrink-0 sm:w-[54rem]" />
       </div>
       <Container className="mt-16">
-        <div className="flex justify-between">
-          <CallToAction />
+        <div className="flex justify-center">
           <div className="hidden sm:flex sm:gap-2">
             {testimonials.map(({ name }, testimonialIndex) => (
               <Headless.Button
