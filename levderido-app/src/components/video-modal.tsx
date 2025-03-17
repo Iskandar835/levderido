@@ -1,7 +1,9 @@
 export function TheVideoModal({
   closeModal,
+  video,
 }: {
   closeModal: (event: React.MouseEvent<HTMLElement>) => void
+  video: string
 }) {
   return (
     <div className="fixed top-0 left-0 z-10 flex h-full w-full items-center justify-center">
@@ -15,7 +17,7 @@ export function TheVideoModal({
             <div className="relative h-[92%] w-[95%]">
               <div className="absolute top-0 left-0 h-full w-full">
                 <video
-                  src="/plays/arbre-à-came.mp4"
+                  src={video}
                   className="h-full w-full rounded-2xl object-cover"
                   controls
                 ></video>
