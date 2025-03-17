@@ -19,50 +19,64 @@ import { TheVideoModal } from './video-modal'
 
 const testimonials = [
   {
+    id: 'hqu69',
     img: '/posters/arbre-a-came-daudet.jpg',
+    video: '/plays/arbre-à-came.mp4',
     name: "L'arbre à came",
     quote: 'Voir un extrait',
     date: '2014-09-13T00:00:00Z',
   },
   {
+    id: 'mpq25',
     img: '/posters/double-axelle-daudet.jpg',
+    video: '',
     name: 'Double axel-le',
     quote: 'Voir un extrait',
     date: '2023-07-01T00:00:00Z',
   },
   {
+    id: 'bhu33',
     img: '/posters/cest-pas-si-facile-daudet.jpg',
+    video: '',
     name: "C'est pas si facile",
     quote: 'Voir un extrait',
     date: '2022-05-20T00:00:00Z',
   },
   {
+    id: 'sdf96',
     img: '/posters/le-coupable-colbert.jpg',
+    video: '',
     name: 'Le coupable est dans la salle',
     quote: 'Voir un extrait',
     date: '2024-09-06T00:00:00Z',
   },
   {
+    id: 'nhy11',
     img: '/posters/par-la-lorgnette-daudet.jpg',
+    video: '/plays/par-la-lorgnette.mp4',
     name: 'Par la lorgnette',
     quote: 'Voir un extrait',
     date: '2015-11-10T00:00:00Z',
   },
   {
+    id: 'qss55',
     img: '/posters/sale-attente-daudet.jpg',
+    video: '',
     name: 'Sale attente',
     quote: 'Voir un extrait',
     date: '2023-06-30T00:00:00Z',
   },
   {
+    id: 'msk88',
     img: '/posters/soiree-pyjama-un-monde-a-nous.jpg',
+    video: '',
     name: 'Soirée pyjama',
     quote: 'Voir un extrait',
     date: '2024-10-04T00:00:00Z',
   },
 ]
 
-function ModalButton({ content }: { content: string }) {
+function ModalButton({ content, video }: { content: string; video: string }) {
   const [showModal, setShowModal] = useState(false)
 
   return (
@@ -75,7 +89,10 @@ function ModalButton({ content }: { content: string }) {
       </button>
       {showModal &&
         createPortal(
-          <TheVideoModal closeModal={() => setShowModal(false)} />,
+          <TheVideoModal
+            video={video}
+            closeModal={() => setShowModal(false)}
+          />,
           document.body,
         )}
     </>
@@ -87,16 +104,18 @@ function TestimonialCard({
   scrollX,
   img,
   children,
-  quote,
   date,
+  quote,
+  video,
   ...props
 }: {
   bounds: RectReadOnly
   scrollX: MotionValue<number>
   img: string
   children: React.ReactNode
-  quote: string
   date: string
+  quote: string
+  video: string
 } & HTMLMotionProps<'div'>) {
   let ref = useRef<HTMLDivElement | null>(null)
 
@@ -165,7 +184,7 @@ function TestimonialCard({
               {date}
             </span>
           </p>
-          <ModalButton content={quote} />
+          <ModalButton content={quote} video={video} />
         </figcaption>
       </figure>
     </motion.div>
@@ -217,21 +236,20 @@ export function Testimonials() {
           '[--scroll-padding:max(--spacing(6),calc((100vw-(var(--container-2xl)))/2))] lg:[--scroll-padding:max(--spacing(8),calc((100vw-(var(--container-7xl)))/2))]',
         ])}
       >
-        {sortPerformances.map(
-          ({ img, quote, date, name }, testimonialIndex) => (
-            <TestimonialCard
-              key={testimonialIndex}
-              bounds={bounds}
-              scrollX={scrollX}
-              img={img}
-              quote={quote}
-              date={isoToNiceDisplay(date)}
-              onClick={() => scrollTo(testimonialIndex)}
-            >
-              {name}
-            </TestimonialCard>
-          ),
-        )}
+        {sortPerformances.map((perf, testimonialIndex) => (
+          <TestimonialCard
+            key={perf.id}
+            bounds={bounds}
+            scrollX={scrollX}
+            img={perf.img}
+            quote={perf.quote}
+            video={perf.video}
+            date={isoToNiceDisplay(perf.date)}
+            onClick={() => scrollTo(testimonialIndex)}
+          >
+            {perf.name}
+          </TestimonialCard>
+        ))}
         <div className="w-[42rem] shrink-0 sm:w-[54rem]" />
       </div>
       <Container className="mt-16">
