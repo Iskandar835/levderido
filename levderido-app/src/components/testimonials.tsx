@@ -11,9 +11,11 @@ import {
   type HTMLMotionProps,
 } from 'framer-motion'
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
 import { Container } from './container'
 import { Heading, Subheading } from './text'
+import { TheVideoModal } from './video-modal'
 
 const testimonials = [
   {
@@ -59,6 +61,26 @@ const testimonials = [
     date: '2024-10-04T00:00:00Z',
   },
 ]
+
+function ModalButton({ content }: { content: string }) {
+  const [showModal, setShowModal] = useState(false)
+
+  return (
+    <>
+      <button
+        className="mt-2 -mb-4 cursor-pointer rounded-sm bg-white px-2.5 py-1.5 text-sm font-semibold hover:bg-white/85"
+        onClick={() => setShowModal(true)}
+      >
+        {content}
+      </button>
+      {showModal &&
+        createPortal(
+          <TheVideoModal closeModal={() => setShowModal(false)} />,
+          document.body,
+        )}
+    </>
+  )
+}
 
 function TestimonialCard({
   bounds,
@@ -143,9 +165,7 @@ function TestimonialCard({
               {date}
             </span>
           </p>
-          <button className="mt-2 -mb-4 cursor-pointer rounded-sm bg-white px-2.5 py-1.5 text-sm font-semibold hover:bg-white/85">
-            {quote}
-          </button>
+          <ModalButton content={quote} />
         </figcaption>
       </figure>
     </motion.div>
