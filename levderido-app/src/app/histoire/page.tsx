@@ -17,7 +17,7 @@ function Testimonial() {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-[384px_1fr_1fr]">
           <div className="-mt-96 lg:-mt-52">
-            <div className="-m-2 rounded-4xl bg-white/15 ring-1 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-black/5 max-lg:mx-auto max-lg:max-w-xs">
+            <div className="-m-2 rounded-4xl bg-white/15 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:max-w-xs">
               <div className="rounded-4xl p-2 shadow-md shadow-black/5">
                 <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
                   <img
@@ -130,7 +130,7 @@ function FrequentlyAskedQuestions() {
     </Container>
   )
 }
-function Header() {
+function TheCompany() {
   return (
     <Container className="mt-16 mb-32">
       <Heading as="h1">La compagnie</Heading>
@@ -246,7 +246,7 @@ function Person({
   )
 }
 
-export default function Company() {
+export default function History() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
@@ -255,7 +255,7 @@ export default function Company() {
       </Container>
       <Testimonial />
       <FrequentlyAskedQuestions />
-      <Header />
+      <TheCompany />
       <Footer />
     </main>
   )

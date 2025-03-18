@@ -71,9 +71,9 @@ function PricingCards() {
 
 function PricingCard({ tier }: { tier: (typeof tiers)[number] }) {
   return (
-    <div className="-m-2 grid grid-cols-1 rounded-4xl ring-1 shadow-[inset_0_0_2px_1px_#ffffff4d] ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
+    <div className="-m-2 grid grid-cols-1 rounded-4xl shadow-[inset_0_0_2px_1px_#ffffff4d] ring-1 ring-black/5 max-lg:mx-auto max-lg:w-full max-lg:max-w-md">
       <div className="grid grid-cols-1 rounded-4xl p-2 shadow-md shadow-black/5">
-        <div className="rounded-3xl bg-white p-10 pb-9 ring-1 shadow-2xl ring-black/5">
+        <div className="rounded-3xl bg-white p-10 pb-9 shadow-2xl ring-1 ring-black/5">
           <Subheading>{tier.name}</Subheading>
           <p className="mt-2 text-sm/6 text-gray-950/75">{tier.description}</p>
           <div className="mt-8 flex items-center gap-4">
@@ -123,7 +123,7 @@ function PlusIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-export default function Pricing() {
+export default function Registration() {
   return (
     <main className="overflow-hidden">
       <GradientBackground />
