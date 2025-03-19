@@ -11,29 +11,29 @@ export function LogoCloud({
       )}
     >
       <img
-        alt="SavvyCal"
-        src="/logo-cloud/savvycal.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Logo théâtre Marc Baron"
+        src="/logo-theatres/logo-marc-baron.png"
+        className="h-10 max-sm:mx-auto sm:h-18 lg:h-28"
       />
       <img
-        alt="Laravel"
-        src="/logo-cloud/laravel.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Logo théâtre Daudet"
+        src="/logo-theatres/logo-daudet.png"
+        className="h-10 max-sm:mx-auto sm:h-18 lg:h-28"
       />
       <img
-        alt="Tuple"
-        src="/logo-cloud/tuple.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Logo salle Tisot"
+        src="/logo-theatres/logo-tisot.png"
+        className="h-10 max-sm:mx-auto sm:h-18 lg:h-28"
       />
       <img
-        alt="Transistor"
-        src="/logo-cloud/transistor.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Logo théâtre Le Colbert"
+        src="/logo-theatres/logo-colbert.png"
+        className="h-10 max-sm:mx-auto sm:h-18 lg:h-28"
       />
       <img
-        alt="Statamic"
-        src="/logo-cloud/statamic.svg"
-        className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
+        alt="Logo un monde à nous"
+        src="/logo-theatres/logo-un-monde-a-nous.png"
+        className="h-10 max-sm:mx-auto sm:h-18 lg:h-28"
       />
     </div>
   )
