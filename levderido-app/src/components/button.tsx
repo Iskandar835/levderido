@@ -10,17 +10,7 @@ const variants = {
     'data-disabled:bg-gray-950 data-disabled:opacity-40 data-hover:bg-gray-800',
   ),
   secondary: clsx(
-    'relative inline-flex items-center justify-center px-4 py-[calc(--spacing(2)-1px)]',
-    'rounded-full border border-transparent bg-white/15 ring-1 shadow-md ring-[#D15052]/15',
-    'after:absolute after:inset-0 after:rounded-full after:shadow-[inset_0_0_2px_1px_#ffffff4d]',
-    'text-base font-medium whitespace-nowrap text-gray-950',
-    'data-disabled:bg-white/15 data-disabled:opacity-40 data-hover:bg-white/50',
-  ),
-  outline: clsx(
-    'inline-flex items-center justify-center px-2 py-[calc(--spacing(1.5)-1px)]',
-    'rounded-lg border border-transparent ring-1 shadow-sm ring-black/10',
-    'text-sm font-medium whitespace-nowrap text-gray-950',
-    'data-disabled:bg-transparent data-disabled:opacity-40 data-hover:bg-gray-50',
+    'mt-2 -mb-4 cursor-pointer rounded-sm bg-white from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] px-2.5 py-1.5 text-sm font-semibold hover:bg-linear-115',
   ),
 }
 
