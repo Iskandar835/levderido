@@ -22,7 +22,7 @@ function Testimonial() {
                 <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
                   <img
                     alt=""
-                    src="/testimonials/tina-yards.jpg"
+                    src=""
                     className="aspect-3/4 w-full object-cover"
                   />
                 </div>
@@ -160,25 +160,13 @@ function TheCompany() {
         <div className="pt-20 lg:row-span-2 lg:mx-2 lg:mt-8 xl:mr-auto">
           <div className="-mx-8 mx-2 grid grid-cols-2 gap-4 md:mx-0 md:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
-                alt=""
-                src="/company/1.jpg"
-                className="block size-full object-cover"
-              />
+              <img alt="" src="" className="block size-full object-cover" />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img
-                alt=""
-                src="/company/2.jpg"
-                className="block size-full object-cover"
-              />
+              <img alt="" src="" className="block size-full object-cover" />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img
-                alt=""
-                src="/company/3.jpg"
-                className="block size-full object-cover"
-              />
+              <img alt="" src="" className="block size-full object-cover" />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
@@ -223,26 +211,6 @@ function TheCompany() {
         </div>
       </section>
     </Container>
-  )
-}
-
-function Person({
-  name,
-  description,
-  img,
-}: {
-  name: string
-  description: string
-  img: string
-}) {
-  return (
-    <li className="flex items-center gap-4">
-      <img alt="" src={img} className="size-12 rounded-full" />
-      <div className="text-sm/6">
-        <h3 className="font-medium">{name}</h3>
-        <p className="text-gray-500">{description}</p>
-      </div>
-    </li>
   )
 }
 
