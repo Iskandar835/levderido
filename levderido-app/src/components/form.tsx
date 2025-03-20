@@ -71,10 +71,10 @@ export function Form() {
       <form ref={form} onSubmit={sendFormToEmailJS} className="p-7 sm:p-11">
         <div className="flex items-start">
           <Link href="/" title="Home">
-            <Mark className="h-9 fill-black" />
+            <Mark className="h-14 fill-black" />
           </Link>
         </div>
-        <h1 className="mt-8 text-base/6 font-medium">
+        <h1 className="mt-6 text-base/6 font-medium">
           Vous souhaitez nous contacter ?
         </h1>
         <p className="mt-1 text-sm/5 text-gray-600">
