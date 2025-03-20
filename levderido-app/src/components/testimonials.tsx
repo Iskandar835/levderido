@@ -13,6 +13,7 @@ import {
 import { useCallback, useLayoutEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
+import { Button } from './button'
 import { Container } from './container'
 import { Heading, Subheading } from './text'
 import { TheVideoModal } from './video-modal'
@@ -81,12 +82,9 @@ function ModalButton({ content, video }: { content: string; video: string }) {
 
   return (
     <>
-      <button
-        className="mt-2 -mb-4 cursor-pointer rounded-sm bg-white px-2.5 py-1.5 text-sm font-semibold hover:bg-white/85"
-        onClick={() => setShowModal(true)}
-      >
+      <Button variant="secondary" onClick={() => setShowModal(true)}>
         {content}
-      </button>
+      </Button>
       {showModal &&
         createPortal(
           <TheVideoModal
