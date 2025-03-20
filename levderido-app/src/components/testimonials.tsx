@@ -37,7 +37,7 @@ const testimonials = [
   {
     id: 'bhu33',
     img: '/posters/cest-pas-si-facile-daudet.jpg',
-    video: '',
+    video: '/plays/cest-pas-si-facile.mp4',
     name: "C'est pas si facile",
     quote: 'Voir un extrait',
     date: '2022-05-20T00:00:00Z',
@@ -61,7 +61,7 @@ const testimonials = [
   {
     id: 'qss55',
     img: '/posters/sale-attente-daudet.jpg',
-    video: '',
+    video: '/plays/sale-attente.mp4',
     name: 'Sale attente',
     quote: 'Voir un extrait',
     date: '2023-06-30T00:00:00Z',
