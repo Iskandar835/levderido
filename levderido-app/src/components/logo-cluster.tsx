@@ -53,8 +53,8 @@ function Circles() {
 
 function MainLogo() {
   return (
-    <div className="absolute top-32 left-44 flex size-16 items-center justify-center rounded-full bg-white ring-1 shadow-sm ring-black/5">
-      <Mark className="h-9 fill-black" />
+    <div className="absolute top-32 left-44 flex size-16 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-black/5">
+      <Mark className="w-16 fill-black" />
     </div>
   )
 }
@@ -90,7 +90,7 @@ function Logo({
       alt=""
       src={src}
       style={{ left, top } as React.CSSProperties}
-      className="absolute size-16 rounded-full bg-white ring-1 shadow-sm ring-black/5"
+      className="absolute size-16 rounded-full bg-white shadow-sm ring-1 ring-black/5"
     />
   )
 }
@@ -102,37 +102,25 @@ export function LogoCluster() {
       <div className="absolute left-1/2 h-full w-[26rem] -translate-x-1/2">
         <MainLogo />
         <Logo
-          src="/logo-cluster/career-builder.svg"
-          left={360}
-          top={144}
-          hover={{ x: 6, y: 1, rotate: 5, delay: 0.38 }}
-        />
-        <Logo
-          src="/logo-cluster/dribbble.svg"
+          src="/logo-cluster/bank-card.png"
           left={285}
           top={20}
           hover={{ x: 4, y: -5, rotate: 6, delay: 0.3 }}
         />
         <Logo
-          src="/logo-cluster/glassdoor.svg"
+          src="/logo-cluster/euro.png"
           left={255}
           top={210}
           hover={{ x: 3, y: 5, rotate: 7, delay: 0.2 }}
         />
         <Logo
-          src="/logo-cluster/linkedin.svg"
+          src="/logo-cluster/cash-register.png"
           left={144}
           top={40}
           hover={{ x: -2, y: -5, rotate: -6, delay: 0.15 }}
         />
         <Logo
-          src="/logo-cluster/upwork.svg"
-          left={36}
-          top={56}
-          hover={{ x: -4, y: -5, rotate: -6, delay: 0.35 }}
-        />
-        <Logo
-          src="/logo-cluster/we-work-remotely.svg"
+          src="/logo-cluster/bank-check.png"
           left={96}
           top={176}
           hover={{ x: -3, y: 5, rotate: 3, delay: 0.15 }}
