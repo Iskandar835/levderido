@@ -51,7 +51,7 @@ function BentoSection() {
           title="Prochaine pièce"
           description="Pour 2025, nous préparons la pièce de François SCHARRE « Paul m’a laissé sa clé ! », en ésperant vous voir nombreux !"
           graphic={
-            <div className="h-80 bg-[url(/logo-cluster/cash-register.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url(/company/troupe-2025.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -61,7 +61,7 @@ function BentoSection() {
           title="Tarifs"
           description="Le prix des places est porté à 15€. Pour les moins de 18 ans, et plus de 10 ans, le tarif est de 10€. Les places seront gratuites pour les moins de 10 ans."
           graphic={
-            <div className="absolute inset-0 bg-[url(/logo-theatres/theatre.jpeg)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url(/theatre.jpeg)] bg-[size:100%_650px] bg-cover bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -101,10 +101,10 @@ export default function Home() {
     <div className="overflow-hidden">
       <Hero />
       <main>
-        <Container className="mt-10">
+        <Container className="mt-16">
           <LogoCloud />
         </Container>
-        <div className="bg-linear-to-b from-white from-50% to-gray-100 py-32">
+        <div className="bg-[#FEF7FB] py-18 lg:py-32">
           <BentoSection />
         </div>
       </main>
