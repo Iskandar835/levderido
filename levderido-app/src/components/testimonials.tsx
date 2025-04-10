@@ -70,7 +70,7 @@ const testimonials = [
   {
     id: 'msk88',
     img: '/posters/soiree-pyjama-un-monde-a-nous.jpg',
-    video: '',
+    video: '/plays/soirée-pyjama.mp4',
     name: 'Soirée pyjama',
     quote: 'Voir un extrait',
     date: '2024-10-04T00:00:00Z',
@@ -216,7 +216,7 @@ export function Testimonials() {
   }
 
   return (
-    <div className="overflow-hidden py-32">
+    <div className="overflow-hidden py-18 lg:py-28">
       <Container>
         <div ref={setReferenceWindowRef}>
           <Subheading>Un oeil sur</Subheading>
