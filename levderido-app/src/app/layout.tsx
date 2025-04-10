@@ -27,7 +27,7 @@ export default function RootLayout({
           href="/blog/feed.xml"
         />
       </head>
-      <body className="text-gray-950 antialiased">{children}</body>
+      <body className="bg-[#FEF7FB] text-gray-950 antialiased">{children}</body>
     </html>
   )
 }
