@@ -21,8 +21,8 @@ function Testimonial() {
               <div className="rounded-4xl p-2 shadow-md shadow-black/5">
                 <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
                   <img
+                    src="/company/portrait.jpg"
                     alt=""
-                    src=""
                     className="aspect-3/4 w-full object-cover"
                   />
                 </div>
@@ -33,8 +33,9 @@ function Testimonial() {
             <figure className="mx-auto flex max-w-xl flex-col gap-16 max-lg:text-center">
               <blockquote>
                 <p className="relative text-3xl tracking-tight text-white before:absolute before:-translate-x-full before:content-['“'] after:absolute after:content-['”'] lg:text-4xl">
-                  Thanks to Radiant, we&apos;re finding new leads that we never
-                  would have found with legal methods.
+                  La passion du théâtre chevillée au corps, aujourd’hui,
+                  j’imagine et je transmets à travers des ateliers basés sur le
+                  rire, la bienveillance et le plaisir de jouer ensemble.
                 </p>
               </blockquote>
               <figcaption className="mt-auto">
@@ -161,18 +162,30 @@ function TheCompany() {
         <div className="pt-20 lg:row-span-2 lg:mx-2 lg:mt-8 xl:mr-auto">
           <div className="-mx-8 mx-2 grid grid-cols-2 gap-4 md:mx-0 md:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img alt="" src="" className="block size-full object-cover" />
-            </div>
-            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
-              <img alt="" src="" className="block size-full object-cover" />
-            </div>
-            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
-              <img alt="" src="" className="block size-full object-cover" />
+              <img
+                alt=""
+                src="/company/troupe-1.jpg"
+                className="block size-full object-cover"
+              />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
                 alt=""
-                src="/company/4.jpg"
+                src="/company/troupe-2.jpg"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
+              <img
+                alt=""
+                src="/company/troupe-3.png"
+                className="block size-full object-cover"
+              />
+            </div>
+            <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
+              <img
+                alt=""
+                src="/company/troupe-4.png"
                 className="block size-full object-cover"
               />
             </div>
