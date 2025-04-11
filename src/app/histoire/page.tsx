@@ -40,7 +40,7 @@ function Testimonial() {
               </blockquote>
               <figcaption className="mt-auto">
                 <p className="text-sm/6 font-medium text-white">
-                  Nathalie Vandermoeten
+                  Nathalie VANDERMOETEN
                 </p>
                 <p className="text-sm/6 font-medium">
                   <span className="bg-linear-to-r from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff] bg-clip-text text-transparent">
@@ -62,12 +62,12 @@ function FrequentlyAskedQuestions() {
       <section id="faqs" className="scroll-mt-8">
         <Subheading className="text-center">En savoir plus sur</Subheading>
         <Heading as="div" className="mt-2 text-center">
-          Notre histoire
+          Mon histoire
         </Heading>
         <div className="mx-auto mt-16 mb-32 max-w-xl space-y-12">
           <dl>
             <dt className="text-sm font-semibold">
-              Quand est ce que j&apos;ai decouvert le théâtre ?
+              Quand avez-vous découvert le théâtre ?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
               J’ai découvert le théâtre en 2001 en intégrant la troupe de
@@ -79,12 +79,12 @@ function FrequentlyAskedQuestions() {
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              Qu&apos;est ce que je recherchais ?
+              Qu&apos;est-ce que vous recherchiez ?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
-              De retour dans ma ville d’origine, La Seyne Sur mer, en 2008 j’ai
+              De retour dans ma ville d’origine, La Seyne Sur Mer, en 2008 j’ai
               recherché ce que j’avais quitté. J’ai intégré différentes
-              compagnies de théâtre mais sans jamais trouvé ce qui m’animait,
+              compagnies de théâtre mais sans jamais trouver ce qui m’animait :
               l’esprit de cohésion à travers le théâtre. C’est là que la
               création de ma troupe avec mes valeurs, bienveillance et pas de
               jugement, a germé dans mon esprit.
@@ -92,7 +92,7 @@ function FrequentlyAskedQuestions() {
           </dl>
           <dl>
             <dt className="text-sm font-semibold">
-              LE V DE RIDO dans tout sa ?
+              LE V DE RIDO dans tout ça ?
             </dt>
             <dd className="mt-4 text-sm/6 text-gray-600">
               L’histoire du LE V DE RIDO commence sur un coin de table un jour
@@ -101,7 +101,7 @@ function FrequentlyAskedQuestions() {
               plein de personnes de tout horizon et de tout âge. Les deux
               premières pièces « L’arbre à came » en 2014 et « Par la lorgnette
               » en 2015 ont connu un joli succès et ont permis de nous faire
-              connaître. Mais des évènements de vie m’ont obligé à mettre
+              connaître. Mais des évènements de vie m’ont obligée à mettre
               l’association en sommeil…durant cinq ans. C’est en 2020, qu’une
               autre troupe est venue me chercher pour la mise en scène de leur
               pièce « C’est pas si facile »…et le Covid est passé par là ! Nous
@@ -110,7 +110,7 @@ function FrequentlyAskedQuestions() {
               pièce sera jouée en 2022 avec le succès que l’on connaît mais
               aussi la disparition d’un ami, l’un des créateurs de la pièce. En
               2023, j’ai l’immense surprise de voir arriver une dizaine de
-              comédiens qui veulent tous jouer sous ma direction. La création de
+              comédiens qui veulent tous jouer sous ma direction. La décision de
               monter deux pièces sera prise et nous préparerons « Double Axel-le
               », avec les anciens et « Sale attente » avec les nouveaux. Les
               représentations ont lieu sous forme de mini-festival : une pièce
@@ -120,10 +120,11 @@ function FrequentlyAskedQuestions() {
               pièces. D’autres comédiens nous rejoignent et « Le coupable est
               dans la salle » et « Soirée pyjama » voient le jour. Très beau
               succès pour ces deux pièces et « Soirée pyjama » a même été
-              sélectionné par le Rotary-club de La Seyne Sur Mer/Saint Mandrier
-              pour être jouer en faveur des enfants de Mayotte en Février 2025.
-              Cette année, il n’y aura qu’une pièce…enfin pour le moment et ce
-              sera « Paul m’a laissé sa clé ! »
+              sélectionné par le{' '}
+              <span className="text-nowrap">Rotary-Club</span> de La Seyne Sur
+              Mer/Saint Mandrier pour être jouer en faveur des enfants de
+              Mayotte en Février 2025. Cette année, il n’y aura qu’une
+              pièce…enfin pour le moment et ce sera « Paul m’a laissé sa clé ! »
             </dd>
           </dl>
         </div>
@@ -146,7 +147,7 @@ function TheCompany() {
             c’est-à-dire en 2013. Depuis plus de 33 comédiens s’y sont succédés.
             Actuellement la troupe compte 9 membres qui ont tous un rôle dans la
             pièce en préparation. Les ateliers théâtre ont été mis en place
-            cette année, en 2025. Ils permettent aux participants de se
+            cette année, en 2025. Ils permettent aux nouveaux adhérents de se
             familiariser avec les rudiments du théâtre et offrent à la metteur
             en scène l’opportunité de découvrir le potentiel de chacun, et
             pourquoi pas, de leur attribuer un rôle l’année prochaine.
