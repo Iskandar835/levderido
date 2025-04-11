@@ -5,7 +5,6 @@ import { Gradient } from '@/components/gradient'
 import { Keyboard } from '@/components/keyboard'
 import { Mark } from '@/components/logo'
 import { LogoCloud } from '@/components/logo-cloud'
-import { LogoCluster } from '@/components/logo-cluster'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
 import { Testimonials } from '@/components/testimonials'
@@ -59,37 +58,38 @@ function BentoSection() {
         <BentoCard
           eyebrow="Nos"
           title="Tarifs"
-          description="Le prix des places est porté à 15€. Pour les moins de 18 ans, et plus de 10 ans, le tarif est de 10€. Les places seront gratuites pour les moins de 10 ans."
+          description=" Les places sont à 15€ et pour les moins de 10 ans, elles sont gratuites. Pour les plus de 10 ans et moins de 18 ans, elles sont à 10€."
           graphic={
             <div className="absolute inset-0 bg-[url(/theatre.jpeg)] bg-[size:100%_650px] bg-cover bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
-        <BentoCard
+        {/* <BentoCard
           eyebrow="Quelles sont nos"
           title="Moyens de paiement ?"
           description="Les règlements se feront sur place, en espèces, par chèque ou, et c’est la nouveauté de cette année, par carte bancaire."
           graphic={<LogoCluster />}
           className="lg:col-span-2 lg:rounded-bl-4xl"
-        />
+          ****** Pour le moment on laisse ce BentoCard de coter, peut etre réutiliser plus tard *****
+        /> */}
         <BentoCard
           eyebrow="Nos"
           title="Lieux de représentations"
-          description="Les représentations auront lieu durant le mois d’Octobre, voire Novembre 2025. Nous vous communiquerons les lieux et les horaires ultérieurement, à l'approche des dates mentionées ci-dessus."
+          description="Les représentations auront lieu durant le mois d’Octobre, voire Novembre 2025. Nous vous communiquerons les lieux et les horaires ultérieurement."
           graphic={<Map />}
-          className="lg:col-span-2"
+          className="lg:col-span-3 lg:rounded-bl-4xl"
         />
         <BentoCard
           eyebrow="Comment"
-          title="Réservé ?"
-          description="Les réservations sont vivement conseillées, elles se font uniquement par téléphone au : 06 01 85 34 16 !"
+          title="Réserver"
+          description="Les réservations sont vivement conseillées. Elles se font uniquement par sms au 06 01 85 34 16 ou dans la rubrique ''Contact''."
           graphic={
             <div className="flex size-full items-center justify-center pt-10">
               <Keyboard highlighted={['Zero', 'Six', 'Pick']} />
             </div>
           }
-          className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
+          className="max-lg:rounded-b-4xl lg:col-span-3 lg:rounded-br-4xl"
         />
       </div>
     </Container>
