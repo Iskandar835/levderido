@@ -47,7 +47,8 @@ function Header() {
       <Heading as="h1">Nous rejoindre</Heading>
       <Lead className="mt-6 max-w-3xl">
         Venez apprendre les rudiments du théâtre dans la bonne humeur et sans
-        jugement ! <br />{' '}
+        jugement ! <br /> Les ateliers sont animés par Nathalie VANDERMOETEN,
+        metteur en scène de la troupe LE V DE RIDO. <br />
         <span className="italic">La séance découverte est offerte !</span>
       </Lead>
     </Container>
