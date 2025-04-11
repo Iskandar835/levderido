@@ -30,7 +30,7 @@ const testimonials = [
   {
     id: 'mpq25',
     img: '/posters/double-axelle-daudet.jpg',
-    video: '',
+    video: '/plays/double-axelle.mp4',
     name: 'Double axel-le',
     quote: 'Voir un extrait',
     date: '2023-07-01T00:00:00Z',
@@ -46,7 +46,7 @@ const testimonials = [
   {
     id: 'sdf96',
     img: '/posters/le-coupable-colbert.jpg',
-    video: '',
+    video: '/plays/le-coupable-est-dans-la-salle.mp4',
     name: 'Le coupable est dans la salle',
     quote: 'Voir un extrait',
     date: '2024-09-06T00:00:00Z',
