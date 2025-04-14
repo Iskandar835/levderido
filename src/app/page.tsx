@@ -65,14 +65,6 @@ function BentoSection() {
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
         />
-        {/* <BentoCard
-          eyebrow="Quelles sont nos"
-          title="Moyens de paiement ?"
-          description="Les règlements se feront sur place, en espèces, par chèque ou, et c’est la nouveauté de cette année, par carte bancaire."
-          graphic={<LogoCluster />}
-          className="lg:col-span-2 lg:rounded-bl-4xl"
-          ****** Pour le moment on laisse ce BentoCard de coter, peut etre réutiliser plus tard *****
-        /> */}
         <BentoCard
           eyebrow="Nos"
           title="Lieux de représentations"
