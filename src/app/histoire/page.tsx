@@ -22,7 +22,7 @@ function Testimonial() {
                 <div className="overflow-hidden rounded-3xl shadow-2xl outline outline-1 -outline-offset-1 outline-black/10">
                   <img
                     src="/company/portrait.jpg"
-                    alt=""
+                    alt="Portrait de Nathalie Vandermoeten"
                     className="aspect-3/4 w-full object-cover"
                   />
                 </div>
@@ -145,12 +145,13 @@ function TheCompany() {
           <p className="mt-6 text-sm/6 text-gray-600">
             La troupe LE V DE RIDO a été crée en même temps que l’association,
             c’est-à-dire en 2013. Depuis plus de 33 comédiens s’y sont succédés.
-            Actuellement la troupe compte 9 membres qui ont tous un rôle dans la
-            pièce en préparation. Les ateliers théâtre ont été mis en place
-            cette année, en 2025. Ils permettent aux nouveaux adhérents de se
-            familiariser avec les rudiments du théâtre et offrent à la metteur
-            en scène l’opportunité de découvrir le potentiel de chacun, et
-            pourquoi pas, de leur attribuer un rôle l’année prochaine.
+            Actuellement l&apos;association compte une vingtaine de membres et 9
+            ont un rôle dans la pièce en préparation. Les ateliers théâtre ont
+            été mis en place cette année, en 2025. Ils permettent aux nouveaux
+            adhérents de se familiariser avec les rudiments du théâtre et
+            offrent à la metteur en scène l’opportunité de découvrir le
+            potentiel de chacun, et pourquoi pas, de leur attribuer un rôle
+            l’année prochaine.
           </p>
           <p className="mt-8 text-sm/6 text-gray-600">
             La troupe LE V DE RIDO se produit toujours en fin d’année, en
@@ -164,28 +165,28 @@ function TheCompany() {
           <div className="-mx-8 mx-2 grid grid-cols-2 gap-4 md:mx-0 md:grid-cols-4 lg:mx-0 lg:grid-cols-2 lg:gap-4 xl:gap-8">
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
-                alt=""
+                alt="Photo de la troupe 1"
                 src="/company/troupe-1.jpg"
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
-                alt=""
+                alt="Photo de la troupe 2"
                 src="/company/troupe-2.jpg"
                 className="block size-full object-cover"
               />
             </div>
             <div className="aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10">
               <img
-                alt=""
+                alt="Photo de la troupe 3"
                 src="/company/troupe-3.png"
                 className="block size-full object-cover"
               />
             </div>
             <div className="-mt-8 aspect-square overflow-hidden rounded-xl shadow-xl outline-1 -outline-offset-1 outline-black/10 lg:-mt-32">
               <img
-                alt=""
+                alt="Photo de la troupe 4"
                 src="/company/troupe-4.png"
                 className="block size-full object-cover"
               />
