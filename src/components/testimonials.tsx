@@ -15,6 +15,7 @@ import { createPortal } from 'react-dom'
 import useMeasure, { type RectReadOnly } from 'react-use-measure'
 import { Button } from './button'
 import { Container } from './container'
+import NewTag from './new-tag'
 import { Heading, Subheading } from './text'
 import { TheVideoModal } from './video-modal'
 
@@ -22,6 +23,8 @@ const testimonials = [
   {
     id: 'hqu69',
     img: '/posters/arbre-a-came-daudet.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/arbre-à-came.mp4',
     name: "L'arbre à came",
     quote: 'Voir un extrait',
@@ -30,6 +33,8 @@ const testimonials = [
   {
     id: 'mpq25',
     img: '/posters/double-axelle-daudet.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/double-axelle.mp4',
     name: 'Double axel-le',
     quote: 'Voir un extrait',
@@ -38,6 +43,8 @@ const testimonials = [
   {
     id: 'bhu33',
     img: '/posters/cest-pas-si-facile-daudet.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/cest-pas-si-facile.mp4',
     name: "C'est pas si facile",
     quote: 'Voir un extrait',
@@ -46,6 +53,8 @@ const testimonials = [
   {
     id: 'sdf96',
     img: '/posters/le-coupable-colbert.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/le-coupable-est-dans-la-salle.mp4',
     name: 'Le coupable est dans la salle',
     quote: 'Voir un extrait',
@@ -54,6 +63,8 @@ const testimonials = [
   {
     id: 'nhy11',
     img: '/posters/par-la-lorgnette-daudet.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/par-la-lorgnette.mp4',
     name: 'Par la lorgnette',
     quote: 'Voir un extrait',
@@ -62,6 +73,8 @@ const testimonials = [
   {
     id: 'qss55',
     img: '/posters/sale-attente-daudet.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/sale-attente.mp4',
     name: 'Sale attente',
     quote: 'Voir un extrait',
@@ -70,14 +83,38 @@ const testimonials = [
   {
     id: 'msk88',
     img: '/posters/soiree-pyjama-un-monde-a-nous.jpg',
+    isNew: false,
+    videoAvailable: true,
     video: '/plays/soirée-pyjama.mp4',
     name: 'Soirée pyjama',
     quote: 'Voir un extrait',
     date: '2024-10-04T00:00:00Z',
   },
+  {
+    id: 'isk38',
+    img: '/posters/paul-ma-laisser-ça-cle.png',
+    isNew: true,
+    videoAvailable: false,
+    video: '',
+    name: 'Paul ma laisser ça clé',
+    quote: 'Lire le resumé',
+    date: '2025-10-04T00:00:00Z',
+    description:
+      "Quand Sophie vient cambrioler cet appartement apparemment vide pour le week-end, elle ne se doute pas que Paul, le locataire, a tendance à laisser sa clé à bien du monde. Surprise en flagrant délit, elle va être obligée de mentir et de changer d'identité pour essayer de se sortir d'affaires. Mais ce qu'elle ne sait pas, c'est qu'elle est chez Paul, champion du monde toute catégorie du bobard…",
+  },
 ]
 
-function ModalButton({ content, video }: { content: string; video: string }) {
+function ModalButton({
+  content,
+  isVideo,
+  video,
+  description,
+}: {
+  content: string
+  isVideo: boolean
+  video: string
+  description?: string
+}) {
   const [showModal, setShowModal] = useState(false)
 
   return (
@@ -88,7 +125,9 @@ function ModalButton({ content, video }: { content: string; video: string }) {
       {showModal &&
         createPortal(
           <TheVideoModal
+            isVideo={isVideo}
             video={video}
+            description={description}
             closeModal={() => setShowModal(false)}
           />,
           document.body,
@@ -101,19 +140,25 @@ function TestimonialCard({
   bounds,
   scrollX,
   img,
+  isNew,
   children,
   date,
+  isVideo,
   quote,
   video,
+  description,
   ...props
 }: {
   bounds: RectReadOnly
   scrollX: MotionValue<number>
   img: string
+  isNew: boolean
   children: React.ReactNode
   date: string
+  isVideo: boolean
   quote: string
   video: string
+  description?: string
 } & HTMLMotionProps<'div'>) {
   let ref = useRef<HTMLDivElement | null>(null)
 
@@ -165,6 +210,11 @@ function TestimonialCard({
         aria-hidden="true"
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
+      {isNew && (
+        <div className="absolute top-4 left-4 z-1000">
+          <NewTag />
+        </div>
+      )}
       <figure className="relative p-10">
         <blockquote>
           <p className="relative text-lg font-semibold text-white uppercase">
@@ -182,7 +232,12 @@ function TestimonialCard({
               {date}
             </span>
           </p>
-          <ModalButton content={quote} video={video} />
+          <ModalButton
+            isVideo={isVideo}
+            content={quote}
+            video={video}
+            description={description}
+          />
         </figcaption>
       </figure>
     </motion.div>
@@ -240,6 +295,9 @@ export function Testimonials() {
             bounds={bounds}
             scrollX={scrollX}
             img={perf.img}
+            isNew={perf.isNew}
+            isVideo={perf.videoAvailable}
+            description={perf.description}
             quote={perf.quote}
             video={perf.video}
             date={isoToNiceDisplay(perf.date)}
