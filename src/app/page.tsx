@@ -48,9 +48,9 @@ function BentoSection() {
         <BentoCard
           eyebrow="Notre"
           title="Prochaine pièce"
-          description="Pour 2025, nous préparons la pièce de François SCHARRE « Paul m’a laissé sa clé ! », en ésperant vous voir nombreux !"
+          description="Pour notre grande première nous serons au Centre Culturel Tisot le samedi 4 octobre à 20h30, d'autres dates arriveront bientôt ! Nous vous attendons nombreux et surtout pensez à reserver 😉. Pour connaitre le résumé allez dans la section : 'Nos représentations'."
           graphic={
-            <div className="h-80 bg-[url(/company/troupe-2025.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
+            <div className="h-80 bg-[url(/posters/paul-ma-laisser-ça-cle.png)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -68,7 +68,7 @@ function BentoSection() {
         <BentoCard
           eyebrow="Nos"
           title="Lieux de représentations"
-          description="Les représentations auront lieu durant le mois d’Octobre, voire Novembre 2025. Nous vous communiquerons les lieux et les horaires ultérieurement."
+          description="Les représentations auront lieu durant le mois d’Octobre, voire Novembre 2025. Nous vous communiquerons les lieux et les horaires dans la section : 'Notre prochaine pièce'."
           graphic={<Map />}
           className="lg:col-span-3 lg:rounded-bl-4xl"
         />
