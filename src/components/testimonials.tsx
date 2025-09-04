@@ -211,7 +211,7 @@ function TestimonialCard({
         className="absolute inset-0 rounded-3xl bg-linear-to-t from-black from-[calc(7/16*100%)] ring-1 ring-gray-950/10 ring-inset sm:from-25%"
       />
       {isNew && (
-        <div className="absolute top-4 left-4 z-1000">
+        <div className="absolute top-4 left-4">
           <NewTag />
         </div>
       )}

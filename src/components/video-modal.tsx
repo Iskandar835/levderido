@@ -31,7 +31,7 @@ export function TheVideoModal({
                     <h2 className="mt-2 mr-auto ml-auto w-[10ch] rounded-tl-2xl rounded-br-2xl bg-black p-1 text-center font-semibold text-white shadow-lg sm:rounded-tl-3xl sm:rounded-br-3xl sm:p-2 sm:text-lg lg:mt-28 lg:text-xl">
                       Resumé
                     </h2>
-                    <p className="mt-7 text-center text-[0.8rem] font-medium sm:text-base lg:mt-10 lg:text-lg">
+                    <p className="mt-4 text-center text-[0.8rem] font-medium sm:text-base lg:mt-10 lg:text-lg">
                       {description}
                     </p>
                   </>
