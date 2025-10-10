@@ -48,9 +48,9 @@ function BentoSection() {
         <BentoCard
           eyebrow="Notre"
           title="Prochaine pièce"
-          description="Pour notre grande première nous serons au Centre Culturel Tisot le samedi 4 octobre à 20h30, d'autres dates arriveront bientôt ! Nous vous attendons nombreux et surtout pensez à reserver 😉. Pour connaitre le résumé allez dans la section : 'Nos représentations'."
+          description="Avec un beau succès le 4 Octobre au Centre Culturel Tisot à la Seyne Sur Mer, nous continuons nos représentations pour nos amis de Garéoult. Pour la première fois, nous serons à la salle communale le Dimanche 26 Octobre 2025 à 15h00 pour présenter 'Paul m'a laissé sa clé'. Le spectacle est gratuit, alors n'hésitez pas ! Venez découvrir la troupe LE V DE RIDO !!"
           graphic={
-            <div className="h-80 bg-[url(/posters/paul-ma-laisser-ça-cle.png)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
+            <div className="h-80 bg-[url(/posters/paul-ma-laisser-ça-cle2.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"

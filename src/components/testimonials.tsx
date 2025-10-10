@@ -98,7 +98,7 @@ const testimonials = [
     video: '',
     name: 'Paul ma laisser ça clé',
     quote: 'Lire le resumé',
-    date: '2025-10-04T00:00:00Z',
+    date: '2025-10-26T00:00:00Z',
     description:
       "Quand Sophie vient cambrioler cet appartement apparemment vide pour le week-end, elle ne se doute pas que Paul, le locataire, a tendance à laisser sa clé à bien du monde. Surprise en flagrant délit, elle va être obligée de mentir et de changer d'identité pour essayer de se sortir d'affaires. Mais ce qu'elle ne sait pas, c'est qu'elle est chez Paul, champion du monde toute catégorie du bobard…",
   },
