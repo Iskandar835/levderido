@@ -68,7 +68,7 @@ function BentoSection() {
         <BentoCard
           eyebrow="Nos"
           title="Lieux de représentations"
-          description="Les représentations auront lieu durant le mois d’Octobre, voire Novembre 2025. Nous vous communiquerons les lieux et les horaires dans la section : 'Notre prochaine pièce'."
+          description="Les représentations auront lieu durant le mois d'Octobre, voire Novembre 2025. Nous vous communiquerons les lieux et les horaires dans la section : 'Notre prochaine pièce'."
           graphic={<Map />}
           className="lg:col-span-3 lg:rounded-bl-4xl"
         />
