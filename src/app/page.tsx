@@ -48,9 +48,9 @@ function BentoSection() {
         <BentoCard
           eyebrow="Notre"
           title="Prochaine pièce"
-          description="Je vous présente la troupe ado du LE V DE RIDO. 6 jeunes motivés et pas mal doués qui font de nos mercredi après-midi des vrais instants de fou rire. Elle est composée de Myley, Valentine, Hugo, Fabio, Max et Théo. Peut-être qu'un petit spectacle d'impro se profile pour la fin du mois de Juin.... à suivre 😉🤗🎭"
+          description="Et c'est parti pour une nouvelle saison avec une troupe un peu modifiée mais très motivée. La pièce a été choisie mais, pour l'instant, nous garderons le secret. Nous vous donnons rendez-vous en Octobre pour les représentations. 'Paul m'a laissé sa clé' sera joué le Dimanche 01 Février à 15h00 au théâtre Marc Baron de Saint Mandrier. Comme l'an dernier, cette représentation sera sous l'égide du Rotary-Club de La Seyne-sur-Mer/Saint-Mandrier et la recette sera reversée au Rotary pour mener des actions en faveur de l'illettrisme. On vous attend nombreux 🎭"
           graphic={
-            <div className="h-80 bg-[url(/posters/troupe-ados.png)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
+            <div className="h-80 bg-[url(/company/troupe-2026.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
