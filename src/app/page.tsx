@@ -46,11 +46,11 @@ function BentoSection() {
       </Heading>
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
-          eyebrow="Notre"
-          title="Prochaine pièce"
-          description="Et c'est parti pour une nouvelle saison avec une troupe un peu modifiée mais très motivée. La pièce a été choisie mais, pour l'instant, nous garderons le secret. Nous vous donnons rendez-vous en Octobre pour les représentations. 'Paul m'a laissé sa clé' sera joué le Dimanche 01 Février à 15h00 au théâtre Marc Baron de Saint Mandrier. Comme l'an dernier, cette représentation sera sous l'égide du Rotary-Club de La Seyne-sur-Mer/Saint-Mandrier et la recette sera reversée au Rotary pour mener des actions en faveur de l'illettrisme. On vous attend nombreux 🎭"
+          eyebrow="Nouveauté"
+          title="chez LE V DE RIDO"
+          description="L'association, outre la préparation d'une nouvelle pièce, met en place des ateliers d'improvisation. Ils ont lieu tous les mercredis de 19h00 à 20h30, à la maison intergénérationnelle Saint Georges à La Seyne Sur Mer. Le restaurant 'Can'elles' à Six Fours nous a demandé d'animer un spectacle d'improvisation le Vendredi 10 Avril 2026 à 19h30. Si vous voulez passer une bonne soirée et découvrir ce que nous faisons,  noter cette date sur votre agenda ! La pièce 'Paul m'a laissé sa clé' sera jouée,  pour la dernière fois,  le samedi 16 Mai 2026 à 20h30 à la salle de La Guicharde à Sanary. Si vous n'avez pas encore eu l'occasion de la voir, noter aussi cette date, soirée de rigolade garantie."
           graphic={
-            <div className="h-80 bg-[url(/company/troupe-2026.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
+            <div className="h-80 bg-[url(/posters/affiche-impro.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
