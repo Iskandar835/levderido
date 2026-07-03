@@ -21,6 +21,18 @@ import { TheVideoModal } from './video-modal'
 
 const testimonials = [
   {
+    id: 'hqu12',
+    img: '/posters/mystere-au-manoir.jpg',
+    isNew: true,
+    videoAvailable: false,
+    video: '/plays/arbre-à-came.mp4',
+    name: 'Mystère au manoir Vallandry',
+    quote: 'Lire le résumé',
+    date: '2026-10-03T00:00:00Z',
+    description:
+      'La vieille Éléonore Vallandry, maltraite son entourage et refuse d’aider ses fils en difficulté. Lorsqu’elle appelle la police pour faire une révélation, la disparition de ses rubis et les tensions autour de son héritage déclenchent une enquête. Tous les proches deviennent suspects, dans une intrigue policière à la manière d’Agatha Christie. Saurez-vous trouver qui est coupable avant la fin ?',
+  },
+  {
     id: 'hqu69',
     img: '/posters/arbre-a-came-daudet.jpg',
     isNew: false,
@@ -93,7 +105,7 @@ const testimonials = [
   {
     id: 'isk38',
     img: '/posters/paul-ma-laisser-ça-cle.png',
-    isNew: true,
+    isNew: false,
     videoAvailable: false,
     video: '',
     name: 'Paul ma laisser ça clé',

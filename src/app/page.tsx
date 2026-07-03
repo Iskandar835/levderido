@@ -47,10 +47,10 @@ function BentoSection() {
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Nouveauté"
-          title="chez LE V DE RIDO"
-          description="L'association, outre la préparation d'une nouvelle pièce, met en place des ateliers d'improvisation. Ils ont lieu tous les mercredis de 19h00 à 20h30, à la maison intergénérationnelle Saint Georges à La Seyne Sur Mer. Le restaurant 'Can'elles' à Six Fours nous a demandé d'animer un spectacle d'improvisation le Vendredi 10 Avril 2026 à 19h30. Si vous voulez passer une bonne soirée et découvrir ce que nous faisons,  noter cette date sur votre agenda ! La pièce 'Paul m'a laissé sa clé' sera jouée,  pour la dernière fois,  le samedi 16 Mai 2026 à 20h30 à la salle de La Guicharde à Sanary. Si vous n'avez pas encore eu l'occasion de la voir, noter aussi cette date, soirée de rigolade garantie."
+          title="LE V DE RIDO"
+          description="Cette année encore, nous avons choisi une pièce de François Scharre ' Mystère au manoir Vallandry '. Une pièce hilarante, avec une once de mystère et une enquête policière rondement menée. Notre grande première aura lieu le Samedi 03 Octobre 2026 à 20h30 au Centre Culturel Tisot à La Seyne Sur Mer. D'autres dates sont en négociation, nous ne manquerons pas de vous en tenir informés. Les réservations sont vivement recommandées."
           graphic={
-            <div className="h-80 bg-[url(/posters/affiche-impro.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
+            <div className="h-80 bg-[url(/posters/mystere-au-manoir.jpg)] bg-[size:100%_650px] bg-cover bg-[left_0px_top_-10px] bg-no-repeat sm:bg-[left_0px_top_-40px]" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
