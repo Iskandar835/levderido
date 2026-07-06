@@ -104,7 +104,7 @@ const testimonials = [
   },
   {
     id: 'isk38',
-    img: '/posters/paul-ma-laisser-ça-cle.png',
+    img: '/posters/paul-ma-laisser-ca-cle.png',
     isNew: false,
     videoAvailable: false,
     video: '',
