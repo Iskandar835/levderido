@@ -104,11 +104,11 @@ const testimonials = [
   },
   {
     id: 'isk38',
-    img: '/posters/paul-ma-laisser-ca-cle.png',
+    img: '/posters/paul-ma-laisser-sa-cle.png',
     isNew: false,
     videoAvailable: false,
     video: '',
-    name: 'Paul ma laisser ça clé',
+    name: 'Paul ma laisser sa clé',
     quote: 'Lire le resumé',
     date: '2026-02-01T00:00:00Z',
     description:
