@@ -45,7 +45,7 @@ export function Form() {
     publickKey: 'HmPc-cC_4kLNrsYUI',
   }
 
-  const sendFormToEmailJS = async (e: React.MouseEvent<HTMLFormElement>) => {
+  const sendFormToEmailJS = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!form.current) return
 
